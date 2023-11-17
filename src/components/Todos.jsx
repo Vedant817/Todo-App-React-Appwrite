@@ -7,7 +7,7 @@ function Todos() {
 
     useEffect(() => {
         setLoader(true)
-        const getTodos = database.listDocuments("62cb05f77a7c1fea3139")
+        const getTodos = database.listDocuments("655799b938befdb664d1")
 
         getTodos.then(
             function (response) {
@@ -21,7 +21,7 @@ function Todos() {
     }, [])
 
     const deleteTodo = (id) => {
-        const promise = database.deleteDocument("62cb05f77a7c1fea3139", id)
+        const promise = database.deleteDocument("655799b938befdb664d1", id)
         promise.then(
             function (response) {
                 console.log(response);
